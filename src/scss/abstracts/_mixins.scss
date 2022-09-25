@@ -1,0 +1,45 @@
+
+/*Create breakpoint for project*/
+
+/*
+0 - 576: phone
+576 - 768: tablet portrait
+768 - 992: tablet landscape
+992 - 1200: desktop, laptop
+1200 > : big screen desktop , extra big desktop
+
+*/
+
+@mixin responsive($breakpoint) {
+  @if ($breakpoint == phone) {
+    @media only screen and (min-width: 575.98px) {
+      //>= 576 phone
+      @content;
+    }
+  }
+  @if ($breakpoint == tablet) {
+    @media only screen and (min-width: 767.98px) {
+      // tablets
+      @content;
+    }
+  }
+  @if ($breakpoint == desktop) {
+    @media only screen and (min-width: 991.98px) {
+      // desktops
+      @content;
+    }
+  }
+  @if ($breakpoint == large-desktop) {
+    @media only screen and (min-width: 1199.98px) {
+      // large desktops and above
+      @content;
+    }
+  }
+
+  @if ($breakpoint == extra-big) {
+    @media only screen and (min-width: 1399.98px) {
+      // larger desktops and above
+      @content;
+    }
+  }
+}

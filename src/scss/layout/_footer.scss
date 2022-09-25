@@ -1,0 +1,89 @@
+@use '../abstracts' as *;
+
+
+.footer {
+  // .footer__container
+  &__container {
+    padding: 60px 45px 10px;
+    margin-bottom: 30px;
+  }
+
+  // .footer__link
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:  0 32px;
+    margin-bottom: 12px;
+
+    a:nth-child(4){
+      display: none;
+    }
+  }
+
+  &__logo{
+    display: none;
+  }
+}
+
+.copy-right {
+  text-align: center;
+  span{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #5C5C5C;
+
+  }
+}
+
+.social-link{
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover{
+    transition-delay: 0.1s;
+    transform: translateY(-10px);
+  }
+}
+
+@include responsive(tablet) {
+  .footer {
+
+    &__container {
+      padding: 20px 90px 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__logo{
+      all: unset;
+      width: 226px;
+      height: 172px;
+    }
+
+    &__link{
+      a:nth-child(3){
+        display: none;
+      }
+      a:nth-child(4){
+        display: unset;
+      }
+    }
+  }
+
+  .copy-right {
+      span:first-child{
+        display: none;
+      }
+      span:nth-child(2):after{
+        content: "Copywright 2020 Bella Onojie.com";
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: right;
+        letter-spacing: 0.1px;
+      }
+  }
+}
