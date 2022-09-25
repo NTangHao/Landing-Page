@@ -151,10 +151,12 @@ body {
 .hero__img_app img:first-child {
   transform: translate(19px);
   max-width: 90%;
+  width: 200px;
 }
 .hero__img_app img:nth-child(2) {
   transform: translate(-20px, 57px);
   max-width: 95%;
+  width: 200px;
 }
 
 .app-working-title {
