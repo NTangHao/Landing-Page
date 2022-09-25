@@ -82,9 +82,11 @@
     justify-content: center;
    img:first-child{
      transform: translate(19px);
+     max-width: 90%;
    }
     img:nth-child(2){
    transform: translate(-20px, 57px);
+      max-width: 95%;
     }
   }
 }
