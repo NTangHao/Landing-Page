@@ -9,3 +9,7 @@ window.addEventListener("click", function (e) {
         menu.classList.remove(activeClass);
     }
 });
+
+
+AOS.init();
+

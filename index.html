@@ -9,6 +9,8 @@
     <link href="./src/css/main.css" rel="stylesheet">
     <!--Link favicon-->
     <link href="" rel="shortcut icon" type="image/x-icon"/>
+    <!--Link action on scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -85,7 +87,8 @@
         <!--Guiding to use the app-->
         <section class="guide">
             <div class="box account__container">
-                <img src="images/createaccount.png" alt="create account screen" >
+                <img src="images/createaccount.png" alt="create account screen"
+                     data-aos="fade-right" data-aos-duration="1500">
                 <div class="guide-detail">
                     <h2 class="guide__heading">Create an account</h2>
                     <h3 class="guide__title">
@@ -104,10 +107,12 @@
                     <h4 class="guide__desc"><span>Shop for your favorite meals or drinks</span>
                         and enjoy while doing it.</h4>
                 </div>
-                <img src="images/smartphone_explore..png" alt="create account screen" >
+                <img src="images/smartphone_explore..png" alt="create account screen"
+                     data-aos="fade-left" data-aos-duration="1500">
             </div>
             <div class="box checkout__container">
-                <img src="images/smartphone_checkout..png" alt="create account screen" >
+                <img src="images/smartphone_checkout..png" alt="create account screen"
+                     data-aos="fade-right" data-aos-duration="1500">
                 <div class="guide-detail">
                     <h2 class="guide__heading">Checkout</h2>
                     <h3 class="guide__title"><span>When you done check out</span>
@@ -121,15 +126,15 @@
         <!-- Hero-dark Bottom -->
 
         <section class="hero-dark">
-           <div class="hero-container">
-               <h2>Download the
+           <div class="hero-container" >
+               <h2 data-aos="zoom-in" data-aos-duration="1500">Download the
                    app now.</h2>
-               <h4 class="hero-detail">
+               <h4 class="hero-detail" data-aos="zoom-in" data-aos-duration="1500">
                    <span>Most calendars are designed for teams.</span>
 
 
                </h4>
-               <div class="button-hero-footer ">
+               <div class="button-hero-footer " data-aos="zoom-in" data-aos-duration="1500" >
                    <button class="btn-orange effect">
                        <span>Buy now</span>
                        <span></span>
@@ -165,6 +170,7 @@
 </div>
 
 <!--Link Javascript-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="src/scripts/script.js"></script>
 </body>
 </html>
